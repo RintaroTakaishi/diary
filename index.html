@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>test</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header>
+      <div class="container">
+        <div class="header-title">
+          <div id="top-btn" class="header-logo">diary</div>
+        </div>
+        <div class="header-menu">
+          <ul class="header-menu-right">
+            <li>
+              <a href="#stamps">menu</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- トップ部分 -->
+    <div class="top-section gray-section">
+      <div class="top-inner">
+        <div class="container">
+          <div class="top-description">
+            <h2>HELLO</h2>
+            <p>hello</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- スライダー -->
+    <div id="stamps" class="stamps-section">
+      <div class="container">
+        <div class="section-title">
+          <h3>section1</h3>
+        </div>
+        <div id="stamp-carousel" class="carousel slide" data-ride="carousel"> 
+          <ol class="carousel-indicators">
+            <li data-target="#stamp-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#stamp-carousel" data-slide-to="1" class=""></li>
+            <li data-target="#stamp-carousel" data-slide-to="2" class=""></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item stamp-box active">
+              <img src="images/img1.jpg" class="stamp-image">
+              <h4>img1</h4>
+            </div>
+            <div class="item stamp-box">
+              <img src="images/img2.jpg" class="stamp-image">
+              <h4>img2</h4>
+            </div>
+            <div class="item stamp-box">
+              <img src="images/img3.jpg" class="stamp-image">
+              <h4>img3</h4>
+            </div>
+          </div> 
+        </div> 
+        <p>text<br>
+          check<a class="stamp-link" href="#" target="_blank"> here</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- section2 -->
+    <div id="interview" class="interview-section">
+      <div class="interview-section-top gray-section">
+        <div class="container">
+          <div class="section-title">
+            <h3>section2</h3>
+          </div>
+          <img class="interview-image" src="images/img1.jpg">
+        </div>
+      </div>
+      <div class="interview-section-bottom">
+        <div class="container">
+          <div class="interview-box">
+            <h5>ABOUT1</h5>
+            I'm ------------------------------
+          </div>
+          <div class="interview-box">
+            <h5>ABOUT2</h5>
+            I'm ------------------------------  
+          </div>
+          <div class="interview-box">
+            <h5>ABOUT3</h5>
+            I'm ------------------------------
+          </div>
+          <div class="interview-box">
+            <h5>ABOUT4</h5>
+            I'm ------------------------------
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="contact-section gray-section">
+      <div class="contact-section-inner">
+        <div class="container">
+          <div class="section-title">
+            <h3>section3</h3>
+          </div>
+          <div class="contact-form">
+            <h4>message</h4>
+            <form>
+              <div class="error-message"></div>
+              <input type="text" name="name" placeholder="name" class="contact-name">
+              <div class="error-message"></div>
+              <input type="text" name="email" placeholder="mail address" class="contact-email">
+              <div class="error-message"></div>
+              <textarea name="message" placeholder="content"></textarea>
+              <button type="submit" class="btn btn-contact">submit</button>
+            </form>
+          </div>
+          <div class="contact-about">
+            <h4>About Me</h4>
+            <p>I'm -------------------------------- 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="follow-us">
+          <a href="#" class="social-icon" target='_blank'>
+            <span class="fa fa-facebook"></span>
+          </a>
+          <a href="#" class="social-icon" target='_blank'>
+            <span class="fa fa-twitter"></span>
+          </a>
+        </div>
+        <div class="copyright">someone
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
