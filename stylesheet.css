@@ -1,15 +1,16 @@
 *{
   box-sizing: border-box;
 }
+
 /*-------------------チェック-------------------*/
-/* .container,.header-menu,.section-title,.contact-form,.contact-name,.copyright,footer,footer li,.social-icon{
+/* .container,.header-menu,.section-title,.contact-form,.contact-name,.copyright,footer,li,.social-icon{
   border: 1px solid black;
-}
-.images{
+} */
+/* .images{
   border: 1px solid black;
 
-}
-header{
+} */
+/* header{
   background-color: lightpink;
 }
 main{
@@ -36,44 +37,90 @@ h2{
 }
 a{
   color: gray;
+  text-decoration: none;
+  
 }
 a:hover{
   color: black;
+  font-weight: 2000;
+  text-decoration: none;
 }
 /*------------------header-----------------------*/
-.header-menu{
+
+.menu-wrapper{
   float: right;
-  padding: 0px;
-}
-.header-menu-right{
-  padding: 0px;
+  position: relative;
 }
 
+.header-menu:hover{
+  cursor: pointer;
+  font-weight: bolder;
+}
+.box{
+  position: absolute;
+  top: 20px;
+  right: -20px;
+  width: 80px;
+  height: 240px;
+  border-left: 1px solid gray;
+  text-align: center;
+  padding: 20px 0px;
+  display: none;
+  z-index: 100;
+}
+.box a{
+  display: inline-block;
+  padding: 10px 10px;
+}
+/*----------------home----------------------------*/
+/* jQueryの練習 */
+.index-wrapper{
+  position: relative;
+  height: 300px;
+}
+.horizon1{
+  position: absolute;
+  left: 280px;
+  width: 0px;
+  height: 2px;
+  background: gray;
+}
+/* .horizon2{
+  position: absolute;
+  width: 0px;
+  height: 5px;
+  background: gray;
+} */
+
+.count{
+  position: absolute;
+  top: 95px;
+  font-size: 24px;
+}
 /*----------------Contact form---------------------*/
 
 .section-title{
   padding:20px 0px;
   text-align: center;
   margin-bottom: 10px;
+  font-family: 'Dosis', sans-serif;
 }
 
 .section-message{
   text-align: center;
   margin-bottom: 80px;
-  /* border: 1px solid; */
-
 }
 
 .contact-form{
   text-align: center;
   position: relative;
-
 }
+
 .contact-name{
   text-align: right;
   position: absolute;
-  right: 760px;
-  top: 10px; 
+  right: 800px;
+  top: 0px; 
 }
 .contact-name p{
   padding-bottom: 5px;
@@ -109,12 +156,15 @@ textarea{
 .section-message li{
   display: inline-block;
   margin: 0px 20px;
-  /* border: 1px solid; */
+}
+.section-message li:hover{
+  cursor: pointer;
 }
 .works{
   margin: auto;
   width: 660px;
   height: auto;
+  display: none;
 }
 .work{
   float: left;
@@ -131,6 +181,20 @@ textarea{
 .mod2{
   margin-right: 0px;
 }
+.active{
+  display: block;
+  font-weight: bolder;
+}
+
+.work-action img{
+  position: fixed;
+  right: 150px;
+  top: 150px;
+  width: 300px;
+  height: 300px;
+  display: none;
+}
+
 /*---------------------footer-------------------*/
 footer{
   border-top: 1px solid black;
@@ -142,6 +206,7 @@ footer{
 }
 footer li{
   float:left;
+  padding: 5px;
   margin-right: 50px;
 }
 .follow-us{
